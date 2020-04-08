@@ -10,15 +10,17 @@ public class StringComparator implements Comparator<String> {
 
     @Override
     public int compare(String o1, String o2) {
-        try{
-            return o1.compareTo(o2);
+        if (o1 == null) {
+            return (o2 == null) ? 0 : -1;
         }
-        catch (NullPointerException e){return 0;}
+        if (o2 == null) {
+            return 1;
+        }
+        return o1.compareTo(o2);
     }
 
     @Override
     public Comparator reversed() {        
         return Comparator.super.reversed();
-    }
-    
+    }    
 }
