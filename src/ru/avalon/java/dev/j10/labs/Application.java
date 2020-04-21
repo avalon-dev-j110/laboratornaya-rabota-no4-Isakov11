@@ -3,7 +3,7 @@ package ru.avalon.java.dev.j10.labs;
 import java.util.Comparator;
 import ru.avalon.java.dev.j10.commons.*;
 import java.time.*;
-
+ 
 public class Application {
 
     public static void main(String[] args) {
@@ -14,6 +14,7 @@ public class Application {
          * чтобы он содержал 20 строк, расположенных не
          * по порядку.
          */
+        
 	String[] strings = {"The", "Fairmount", "Parkway", "a", "grand", "boulevard", "that", "cut", "diagonally", "across", 
         "the", "grid", "of", "city", "streets", "was", "designed", "to", "terminate", "at"};
 	/*
@@ -98,6 +99,5 @@ public class Application {
          *    что массив отсортирован по убыванию.
          */
         sort.sort(strings, comparator.reversed());
-        System.out.println("gd");
     }
 }

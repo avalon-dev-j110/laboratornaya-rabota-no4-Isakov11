@@ -26,9 +26,9 @@ public class SortImpl implements Sort{
         Arrays.sort(array);
 
     }
-
+    
     @Override
-    public void sort(Object[] array, Comparator comparator) {
+    public void sort( Object[] array, Comparator comparator) {
         if (array == null || array.length == 0){
             throw new IllegalArgumentException("Array is empty or null");            
         }
