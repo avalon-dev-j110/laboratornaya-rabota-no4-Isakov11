@@ -1,8 +1,9 @@
 package ru.avalon.java.dev.j10.labs;
 
+import com.sun.istack.internal.NotNull;
 import java.util.Comparator;
 
-/**
+/***
  * Абстрактное представление об объекте, отвечающем за
  * сортировку структурированных объектов.
  *
@@ -37,5 +38,6 @@ public interface Sort {
      * @param comparator объект, используемый для сравнения
      *                   элементов массива {@code array}
      */
+    
     void sort(Object[] array, Comparator comparator);
 }
